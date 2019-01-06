@@ -1,0 +1,535 @@
+/*
+* @Author: dell
+* @Date:   2019-01-04 21:03:08
+* @Last Modified by:   dell
+* @Last Modified time: 2019-01-06 16:13:31
+*/
+*{
+	padding:0;
+	margin: 0;
+}
+#div1{
+	width:1350px;
+	margin:0 auto;
+	border:1px solid yellow;
+}
+#div11{
+	width:1160px;
+	margin:0 auto;
+}
+li{
+	list-style: none;
+}
+#div2{
+	width:1160px;
+	height:30px;
+	position: relative;
+}
+#div21{
+	width:850px;
+	height:30px;
+	position: absolute;
+	right:0;
+	bottom:1px;
+	font-size:15px;
+
+}
+#p1{
+	font-size: 15px;
+	margin-top: 12px;
+}
+#li1{
+	float: left;
+}
+a{
+	text-decoration: none;
+	color:black;
+}
+#div3{
+	width:1160px;
+	margin:0 auto;
+	position: relative;
+}
+#div31{
+	width:150px;
+	height:80px;
+}
+#div32{
+	width:540px;
+	height:80px;
+	padding-left:130px;
+	position: absolute;
+	left:150px;
+	top:0;
+}
+#div33{
+	width:85px;
+	height:40px;
+	position: absolute;
+	left:750px;
+	top:10px;
+	background-color: red;
+}
+#p2{
+	text-align: center;
+	font-size: 15px;
+	margin-top: 12px;
+	color: white;
+
+}
+#div34{
+	width:240px;
+	height: 35px;
+	position: absolute;
+	top:12px;
+	right:0px;
+
+}
+#div341{
+	width:80px;
+	height: 35px;
+	border-right: 1px solid grey;
+}
+#img1{
+	margin-left: 30px;
+	margin-bottom:30px;
+	margin-top: 2px;
+}
+#div3411{
+	width:80px;
+	height: 10px;
+	font-size: 5px;
+	text-align: center;
+	position: absolute;
+	top:20px;
+	
+}
+#div342{
+	width:80px;
+	height: 35px;
+	position: absolute;
+	left:80px;
+	top:0;
+	border-right: 1px solid grey;
+}
+#div3421{
+	width:80px;
+	height: 10px;
+	font-size: 5px;
+	text-align: center;
+	position: absolute;
+	top:20px;
+
+}
+#div343{
+	width:80px;
+	height: 27px;
+	position: absolute;
+	left:160px;
+	top:0;
+	background-color: red;
+	font-size: 10px;
+	text-align: center;
+	padding-top: 8px;
+	color: white;
+}
+#div321{
+	width:530px;
+	height: 25px;
+	padding-top: 8px;
+}
+#li2{
+	float: left;
+	font-size: 8px;
+	padding-top: 0px;
+	padding-left: 5px;
+	padding-right: 3px;
+	border-left: 1px solid grey;
+
+}
+.cover{
+	width:1350px;
+	z-index: 9999;
+	background-color: white;
+}
+#div4{
+	height:40px;
+	width:1160px;
+	margin:0 auto;
+	background-color: #333333;
+}
+#li4{
+	float: left;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-left: 40px;
+	margin-top: 8px;
+}
+#div5{
+	width:1350px;
+	margin:0 auto;
+	height: 800px;
+	background-color: #f6f5f4;
+}
+#div51{
+	width:1160px;
+	height: 25px;
+	margin:0 auto;
+	font-size: 15px;
+	padding-top: 15px;
+}
+#div52{
+	width:1180px;
+	height:620px;
+	margin:0 auto;
+	background-color: #f6f5f4;
+	position: relative;
+
+}
+#div521{
+	width:990px;
+	height: 615px;
+	background-color: white;
+	padding-top: 20px;
+	position: relative;
+}
+#glass{
+	position: absolute;
+	top:-9999px;
+	left:-9999px;
+	width:50px;
+	height:50px;
+	cursor: move;
+	background: rgba(0,0,180,0.5);
+}
+#imgMax{
+position: absolute; /* 必需 */
+overflow: hidden; /* 必需，盖掉超出的大图[斜眼笑] */
+left: 210px; /* 必需，此处为距原图左边10像素 */
+top: 0; /* 必需，此处为距上边0像素 */
+width: 200px; /* 放大图片容器的宽度 此处此处是放大4倍，为200，保持和原图容器一般大，若此处为400，则是放大2*4倍，那么相应的放大图片应该是200*4*2=1600 */
+height: 200px; /* 放大图片容器的高度 此处此处是放大4倍，为200，保持和原图容器一般大，若此处为400，则是放大2*4倍，那么相应的放大图片应该是200*4*2=1600 */
+display: none; /* 先隐藏 */
+}
+.#maxImg{
+position: absolute; /* 必需 */
+width: 800px; /* 此处是放大4倍，所以为200*4=800 受放大图片所在的容器影响，规则如上 */
+height: 800px; /* 此处是放大4倍，所以为200*4=800 受放大图片所在的容器影响，规则如上 */
+}
+#pp{
+	font-size: 20px;
+	position: absolute;
+	top:20px;
+	left:460px;
+	margin-bottom: 20px;
+	font-weight: bolder;
+}
+#pp1{
+	color: grey;
+	position: absolute;
+	top:50px;
+	left:470px;
+	font-size: 15px;
+
+}
+#slider{width:150px;height:150px;position:absolute;left:0;top:0;background:#CCC;opacity:0.88;display:none;}
+#img91{position:absolute;left:446px;top:20px;display:none; width:440px;height:440px;overflow:hidden;border:1px solid red;z-index: 9999999;}
+#Bimg{position:absolute;left:0;top:0;}
+#divc{
+	width:100px;
+	height: 20px;
+	margin:0 auto;
+	padding-top:8px;
+	padding-left: 30px;
+	font-size: 15px;
+	border-radius: 15px;
+	border:1px solid red;
+	position: absolute;
+	top:420px;
+	left:525px;
+
+}
+#divd{
+	width:100px;
+	height: 20px;
+	margin:0 auto;
+	padding-top:8px;
+	padding-left: 30px;
+	font-size: 15px;
+	border-radius: 15px;
+	border:1px solid red;
+	position: absolute;
+	top:420px;
+	background-color: red;
+	left:740px;
+
+}
+#moban{
+	position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color:#dedcd8;
+    width:1000px;
+    height:680px;
+    opacity:0.9;
+}
+#moban1{
+	width:398px;
+	height: 240px;
+	position: relative;
+	margin-top: 200px;
+	margin-left: 250px;
+	border:1px solid red;
+	background-color: white;
+}
+#moban4{
+	width:88px;
+	height:20px;
+	border-radius: 15px;
+	position: absolute;
+	top:160px;
+	left:30px;
+	font-size: 15px;
+	padding-left: 22px;
+	padding-top:10px;
+	border:1px solid red;
+}
+#moban5{
+	width:100px;
+	height:20px;
+	border-radius: 15px;
+	position: absolute;
+	top:160px;
+	left:240px;
+	font-size: 15px;
+	padding-left: 15px;
+	padding-top: 10px;
+	border:1px solid red;
+	background-color: red;
+}
+#moban3{
+	width:385px;
+	height:20px;
+	position: absolute;
+	top:40px;
+
+}
+#moban2{
+	width:20px;
+	padding-left: 380px;
+}
+#diva{
+	width:60px;
+	height:60px;
+}
+#divb{
+	width:60px;
+	height:60px;
+}
+#div522{
+	width:180px;
+	height: 650px;
+	background-color: white;
+	position: absolute;
+	top:0;
+	right:0;
+}
+#div523{
+	width:180px;
+	height: 30px;
+	position: absolute;
+	bottom:-30px;
+	right:0;
+	background-color: #f6f5f4;
+}
+#div5211{
+	width:420px;
+	height:408px;
+	border:1px solid grey;
+	margin-left: 20px;
+}
+#div5212{
+	width:406px;
+	height:104px;
+	position: relative;
+	padding-top: 20px;
+}
+#div53{
+	width:1247px;
+	height:116px;
+	margin-left: 80px;
+}
+#div7{
+	width:1350px;
+	height:181px;
+	margin:0 auto;
+	border:1px solid grey;
+	position: relative;
+	background-color: white;
+}
+#div77{
+	width:149px;
+	height: 181px;
+	margin-left:160px;
+}
+#p6{
+	font-size: 20px;
+}
+#div71{
+	width:80px;
+	height:181px;
+	position: absolute;
+	top:20px;
+	left:350px;
+	font-size: 15px;
+	line-height: 30px;
+	color: grey;
+}
+#div72{
+	width:80px;
+	height:181px;
+	position: absolute;
+	top:20px;
+	left:480px;
+	font-size: 15px;
+	line-height: 30px;
+	color: grey;
+}
+#div73{
+	width:80px;
+	height:181px;
+	position: absolute;
+	top:20px;
+	left:610px;
+	font-size: 15px;
+	line-height: 30px;
+	color: grey;
+}
+#div74{
+	width:80px;
+	height:181px;
+	position: absolute;
+	top:20px;
+	left:740px;
+	font-size: 15px;
+	line-height: 30px;
+	color: grey;
+}
+#div75{
+	width:80px;
+	height:181px;
+	position: absolute;
+	top:20px;
+	left:870px;
+	font-size: 15px;
+	line-height: 30px;
+	color: grey;
+}
+#div76{
+	width:80px;
+	height:181px;
+	position: absolute;
+	top:20px;
+	left:990px;
+	font-size: 15px;
+	line-height: 30px;
+	color: grey;
+}
+#div78{
+	width:144px;
+	height: 181px;
+	position: absolute;
+	top: 20px;
+	left:1200px;
+}
+#dive{
+	height:188px;
+	border:1px solid red;
+	width:1350px;
+	margin:0 auto;
+	background-color: white;
+}
+#div8{
+	width:800px;
+	margin:0 auto;
+	height:20px;
+	padding-top: 20px;
+}
+#li21{
+	float: left;
+	font-size: 15px;
+	padding-top: 0px;
+	padding-left: 8px;
+	padding-right:8px;
+	border-left: 1px solid grey;
+	color: grey;
+
+}
+#div81{
+	width:800px;
+	height: 15px;
+	margin:0 auto;
+	margin-top:5px;
+	font-size: 15px;
+	color: grey;
+}
+#div82{
+	width:1300px;
+	margin:0 auto;
+	margin-top:10px;
+	font-size: 15px;
+	color: grey;
+}
+#div83{
+	width:200px;
+	margin:0 auto;
+	margin-top:5px;
+	font-size: 15px;
+	color: grey;
+}
+#div84{
+	width:800px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+#li7{
+	float: left;
+	margin-left: 5px;
+}
+#divf{
+	width:1350px;
+	margin:0 auto;
+	background-color: #f8f7f6;
+	position: relative;
+}
+#div79{
+	width:196px;
+	height:360px;
+	overflow: hidden;
+	position: absolute;
+	top:0;
+	right:75px;
+	border:1px solid red;
+	font-size: 15px;
+	color: red;
+	line-height: 30px;
+}
+#div791{
+	width:192px;
+	height:25px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	border-bottom: 1px solid grey;
+	text-align: center;
+	color: red;
+	padding-left: 15px;
+}
+#div792{
+	width: 196px;
+	height:138px;
+	background-color: white;
+	position: absolute;
+	bottom:0;
+	right:75px;
+}
